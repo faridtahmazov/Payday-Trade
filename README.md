@@ -54,6 +54,7 @@ implemented completely within a sprint
 # Get Register verify account
 ![Screenshot (81)](https://user-images.githubusercontent.com/86052693/175531249-fa97f1c7-7842-4922-be61-d9b7c09fd1f6.png)
 ![Screenshot (90)](https://user-images.githubusercontent.com/86052693/175531261-7ae75ad5-260b-4db3-986e-7cab4740f0a9.png)
+# Email verify
 ![Screenshot (82)](https://user-images.githubusercontent.com/86052693/175531252-a8b1bbb7-5a50-4af7-8a99-d6224ad49a57.png)
 
 # Post Login
@@ -63,5 +64,9 @@ implemented completely within a sprint
 ![Screenshot (86)](https://user-images.githubusercontent.com/86052693/175531259-ad2022fa-62d3-404c-aeb3-ce0b24f388c4.png)
 
 # Place An Order
-![Screenshot (88)](https://user-images.githubusercontent.com/86052693/175530973-c4f058a6-dcff-43b4-a363-5154e2ca3cf2.png)
+![Screenshot (91)](https://user-images.githubusercontent.com/86052693/175538157-1d6b30bb-ac4d-4b8c-9a7b-635970a69c92.png)
+
+# Order notifications
+![Screenshot (92)](https://user-images.githubusercontent.com/86052693/175538287-61be5318-0ff0-4799-a9c2-763d658b662e.png)
+
 
