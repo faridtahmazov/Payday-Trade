@@ -48,9 +48,12 @@ implemented completely within a sprint
   - AddToCartDTO, CartDTO, CartItemDTO, CredentialDTO, RegistrationRequestDTO and the ResponseDTO that brings it all together;
 * Create a RestController 
   - AuthenticationRestController, CartRestController, StockDataRestController;
-  - 
+  
+## Post Register (Generate verify token)
 ![Screenshot (84)](https://user-images.githubusercontent.com/86052693/175531256-d5d8925f-487e-46ab-92ff-2e11f8f81fc3.png)
+## Get Register verify account
 ![Screenshot (81)](https://user-images.githubusercontent.com/86052693/175531249-fa97f1c7-7842-4922-be61-d9b7c09fd1f6.png)
+![Screenshot (90)](https://user-images.githubusercontent.com/86052693/175531261-7ae75ad5-260b-4db3-986e-7cab4740f0a9.png)
 
 ![Screenshot (88)](https://user-images.githubusercontent.com/86052693/175530973-c4f058a6-dcff-43b4-a363-5154e2ca3cf2.png)
 ![Screenshot (80)](https://user-images.githubusercontent.com/86052693/175531242-2532b0ce-1a5a-480e-b5ae-be5345eb411e.png)
@@ -59,4 +62,3 @@ implemented completely within a sprint
 ![Screenshot (85)](https://user-images.githubusercontent.com/86052693/175531257-a61af356-6af4-43d5-b4ea-92c72c022449.png)
 ![Screenshot (86)](https://user-images.githubusercontent.com/86052693/175531259-ad2022fa-62d3-404c-aeb3-ce0b24f388c4.png)
 ![Screenshot (87)](https://user-images.githubusercontent.com/86052693/175531260-ebe278ee-4cf9-413a-bc4b-39a8ba3c59e1.png)
-![Screenshot (90)](https://user-images.githubusercontent.com/86052693/175531261-7ae75ad5-260b-4db3-986e-7cab4740f0a9.png)
