@@ -49,16 +49,19 @@ implemented completely within a sprint
 * Create a RestController 
   - AuthenticationRestController, CartRestController, StockDataRestController;
   
-## Post Register (Generate verify token)
+# Post Register (Generate verify token)
 ![Screenshot (84)](https://user-images.githubusercontent.com/86052693/175531256-d5d8925f-487e-46ab-92ff-2e11f8f81fc3.png)
-## Get Register verify account
+# Get Register verify account
 ![Screenshot (81)](https://user-images.githubusercontent.com/86052693/175531249-fa97f1c7-7842-4922-be61-d9b7c09fd1f6.png)
 ![Screenshot (90)](https://user-images.githubusercontent.com/86052693/175531261-7ae75ad5-260b-4db3-986e-7cab4740f0a9.png)
-
-![Screenshot (88)](https://user-images.githubusercontent.com/86052693/175530973-c4f058a6-dcff-43b4-a363-5154e2ca3cf2.png)
-![Screenshot (80)](https://user-images.githubusercontent.com/86052693/175531242-2532b0ce-1a5a-480e-b5ae-be5345eb411e.png)
 ![Screenshot (82)](https://user-images.githubusercontent.com/86052693/175531252-a8b1bbb7-5a50-4af7-8a99-d6224ad49a57.png)
-![Screenshot (83)](https://user-images.githubusercontent.com/86052693/175531255-64106486-c9df-4088-8a4a-ad6567fa1646.png)
-![Screenshot (85)](https://user-images.githubusercontent.com/86052693/175531257-a61af356-6af4-43d5-b4ea-92c72c022449.png)
+
+# Post Login
+![Screenshot (80)](https://user-images.githubusercontent.com/86052693/175531242-2532b0ce-1a5a-480e-b5ae-be5345eb411e.png)
+
+# List Stocks
 ![Screenshot (86)](https://user-images.githubusercontent.com/86052693/175531259-ad2022fa-62d3-404c-aeb3-ce0b24f388c4.png)
-![Screenshot (87)](https://user-images.githubusercontent.com/86052693/175531260-ebe278ee-4cf9-413a-bc4b-39a8ba3c59e1.png)
+
+# Place An Order
+![Screenshot (88)](https://user-images.githubusercontent.com/86052693/175530973-c4f058a6-dcff-43b4-a363-5154e2ca3cf2.png)
+
