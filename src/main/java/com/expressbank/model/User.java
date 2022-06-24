@@ -9,6 +9,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Getter
@@ -29,6 +30,7 @@ public class User {
     private String email;
 
     @Column(nullable = false)
+    @Size(min = 6)
     @Pattern(regexp = "^[a-zA-Z0-9]{6}", message = "You can use a minimum of 6 symbols!")
     private String password;
 

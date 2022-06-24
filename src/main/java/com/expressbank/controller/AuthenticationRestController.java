@@ -1,8 +1,8 @@
 package com.expressbank.controller;
 
 import com.expressbank.dto.ResponseDTO;
-import com.expressbank.model.Credential;
-import com.expressbank.model.RegistrationRequest;
+import com.expressbank.dto.CredentialDTO;
+import com.expressbank.dto.RegistrationRequestDTO;
 import com.expressbank.service.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +23,7 @@ public class AuthenticationRestController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<ResponseDTO> register(@Valid @RequestBody RegistrationRequest request){
+    public ResponseEntity<ResponseDTO> register(@Valid @RequestBody RegistrationRequestDTO request){
         return registrationService.register(request);
     }
 
@@ -41,7 +41,7 @@ public class AuthenticationRestController {
     }
 
     @PostMapping({"/login"})
-    public ResponseEntity<ResponseDTO> login(@Valid @RequestBody Credential model){
+    public ResponseEntity<ResponseDTO> login(@Valid @RequestBody CredentialDTO model){
         return registrationService.signIn(model);
     }
 

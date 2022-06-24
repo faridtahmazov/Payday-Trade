@@ -1,5 +1,7 @@
 package com.expressbank.email;
 
 public interface EmailSender {
-    void send(String to, String email);
+    void sendVerifyAccountMsg(String to, String email);
+
+    void sendNotifications(String to, String email);
 }

@@ -1,4 +1,4 @@
-package com.expressbank.model;
+package com.expressbank.dto;
 
 import javax.validation.constraints.NotBlank;
 
@@ -14,7 +14,7 @@ import lombok.*;
 @ToString
 @Builder
 @JsonInclude(Include.NON_NULL)
-public class RegistrationRequest {
+public class RegistrationRequestDTO {
 
     @NotBlank(message = "Name is mandatory")
     private String name;

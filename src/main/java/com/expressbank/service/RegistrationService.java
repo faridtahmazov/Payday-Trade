@@ -3,8 +3,8 @@ package com.expressbank.service;
 import com.expressbank.dto.ResponseDTO;
 import com.expressbank.email.EmailSender;
 import com.expressbank.email.EmailValidator;
-import com.expressbank.model.Credential;
-import com.expressbank.model.RegistrationRequest;
+import com.expressbank.dto.CredentialDTO;
+import com.expressbank.dto.RegistrationRequestDTO;
 import com.expressbank.model.Role;
 import com.expressbank.model.User;
 import com.expressbank.model.util.RoleUtil;
@@ -47,7 +47,14 @@ public class RegistrationService {
     private final ConfirmationTokenService confirmationTokenService;
     private EmailSender emailSender;
 
-    public Optional<User> findUser(Credential model){
+    public User findUserByToken(String token){
+        Optional<ConfirmationToken> confirmationToken = confirmationTokenService.getToken(token);
+        User optionalUser = confirmationToken.get().getUser();
+
+        return optionalUser;
+    }
+
+    public Optional<User> findUser(CredentialDTO model){
         System.out.println("Find user model: " + model);
         if (model.getPassword() != null){
             System.out.println("password isn't null");
@@ -88,7 +95,7 @@ public class RegistrationService {
                 "Deleted is id = " + id + "successfully"), HttpStatus.ACCEPTED);
     }
 
-    public ResponseEntity<ResponseDTO> signIn(Credential model){
+    public ResponseEntity<ResponseDTO> signIn(CredentialDTO model){
         Optional<User> userOptional = findUser(model);
         if (!userOptional.isPresent()){
             String errorMsg = "User not found!";
@@ -112,7 +119,7 @@ public class RegistrationService {
                 "Sign In Successfully!"), HttpStatus.ACCEPTED);
     }
 
-    public ResponseEntity<ResponseDTO> register(RegistrationRequest request) {
+    public ResponseEntity<ResponseDTO> register(RegistrationRequestDTO request) {
         boolean isValidEmail = emailValidator.test(request.getEmail());
 
         if (!isValidEmail) {
@@ -130,7 +137,7 @@ public class RegistrationService {
 
         String link = "http://localhost:8080/api/auth/confirm?token=" + token;
 
-        emailSender.send(request.getEmail(), buildEmail(request.getName(), link));
+        emailSender.sendVerifyAccountMsg(request.getEmail(), buildEmail(request.getName(), link));
 
         return new ResponseEntity<>(ResponseDTO.of(HttpStatus.ACCEPTED, token,
                 "Check your email!"), HttpStatus.ACCEPTED);

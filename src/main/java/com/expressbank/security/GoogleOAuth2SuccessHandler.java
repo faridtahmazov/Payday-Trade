@@ -28,7 +28,7 @@ public class GoogleOAuth2SuccessHandler implements AuthenticationSuccessHandler 
         OAuth2AuthenticationToken token = (OAuth2AuthenticationToken) authentication;
         String email = token.getPrincipal().getAttributes().get("email").toString();
         if (userService.findUserByEmail(email).isPresent()){
-            redirectStrategy.sendRedirect(request, response, "/home");
+            redirectStrategy.sendRedirect(request, response, "/api/stock-market");
         }else{
             redirectStrategy.sendRedirect(request, response, "/register");
         }

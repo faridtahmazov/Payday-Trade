@@ -1,4 +1,4 @@
-package com.expressbank.model;
+package com.expressbank.dto;
 
 
 import lombok.Builder;
@@ -10,7 +10,7 @@ import javax.validation.constraints.NotBlank;
 @Data
 @Getter
 @Builder
-public class Credential {
+public class CredentialDTO {
     private String email;
     @NotBlank(message = "Password is mandatory!")
     private String password;
