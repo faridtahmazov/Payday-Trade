@@ -49,4 +49,5 @@ implemented completely within a sprint
 * Create a RestController 
   - AuthenticationRestController, CartRestController, StockDataRestController;
 
+![Screenshot (88)](https://user-images.githubusercontent.com/86052693/175530973-c4f058a6-dcff-43b4-a363-5154e2ca3cf2.png)
 
